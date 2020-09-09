@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha Nota!"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:id="@+id/titulo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu nome"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/frase"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        />
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/frase"
+        android:id="@+id/nome"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite sua primeira nota"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/frase1"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/frase1"
+        android:id="@+id/nota1"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite sua segunda nota"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/frase2"
+        app:layout_constraintTop_toBottomOf="@+id/nota1"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/frase2"
+        android:id="@+id/nota2"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Média"
+        android:textSize="30sp"
+        android:id="@+id/botao"
+        app:layout_constraintTop_toBottomOf="@id/nota2"
+        android:onClick="media"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/frase3"
+        app:layout_constraintTop_toBottomOf="@+id/botao"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
